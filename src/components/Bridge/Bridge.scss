@@ -1,0 +1,72 @@
+.bridge-container {
+    background: #1f2128;
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 300px; // Adjust to fit your design
+    margin: auto;
+  
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .asset-selector {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+  
+      button {
+        background: #2a2d35;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+  
+      .exchange-icon {
+        color: white;
+        padding: 0 10px;
+      }
+    }
+  
+    .asset-input {
+      background: #2a2d35;
+      border-radius: 15px;
+      padding: 10px;
+      margin-bottom: 20px;
+  
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+  
+      select, input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        border: none;
+        background: #3b3e46;
+        color: white;
+      }
+  
+      input {
+        background: #2a2d35; // Different background for disabled input
+      }
+    }
+  
+    .connect-wallet-button {
+      background: #e63946;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 15px;
+      font-size: 1rem;
+      cursor: pointer;
+      width: 100%;
+      display: block;
+    }
+  }
+  

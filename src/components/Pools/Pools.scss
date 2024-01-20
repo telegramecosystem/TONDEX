@@ -1,0 +1,81 @@
+.pools-container {
+    background: #1f2128;
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: auto;
+  
+    .pools-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+  
+      h1 {
+        margin: 0;
+      }
+  
+      .connect-wallet-button {
+        background: #e63946;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 20px;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+    }
+  
+    .pools-content {
+      .filters {
+        // Stylizacja dla filtrowania i wyszukiwania
+      }
+  
+      .pools-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+  
+        th, td {
+          text-align: left;
+          padding: 10px;
+          border-bottom: 1px solid #2a2d35;
+        }
+  
+        th {
+          color: #777f98;
+        }
+  
+        tr:hover {
+          background-color: #2a2d35;
+        }
+      }
+    }
+  }
+  .view-all {
+    text-align: center;
+    margin-top: 20px;
+  
+    a {
+      color: #58a6ff; // or any other color you prefer
+      text-decoration: none;
+      font-size: 1rem;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .pools-search-filters {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+    .pools-search-bar {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      width: 200px; // Adjust the width as needed
+    }
+  }

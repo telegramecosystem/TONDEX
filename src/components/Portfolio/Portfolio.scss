@@ -1,0 +1,66 @@
+.portfolio-container {
+    background: #1f2128;
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%; // Set to the width of your preference or make it responsive
+    max-width: 600px; // Adjust based on your layout requirements
+    margin: auto;
+  
+    .portfolio-header {
+      .wallet-address {
+        color: #e63946; // Adjust the color to match the design
+        font-weight: bold;
+        padding: 10px 0;
+      }
+      
+      .net-worth {
+        padding: 10px 0;
+        span {
+          font-size: 1.5em;
+        }
+      }
+    }
+  
+    .wallet-info {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+  
+      .wallet-section, .rewards-section, .liquidity-section {
+        background: #2a2d35;
+        border-radius: 15px;
+        padding: 10px;
+        text-align: center;
+  
+        .section-title {
+          font-weight: bold;
+          margin-bottom: 5px;
+        }
+  
+        .wallet-contents, .rewards-contents, .liquidity-contents {
+          margin-bottom: 10px;
+        }
+  
+        .token-name {
+          display: block;
+          margin-bottom: 5px;
+        }
+        
+        button {
+          width: 100%;
+          padding: 10px;
+          border: none;
+          border-radius: 10px;
+          background: #e63946;
+          color: white;
+          cursor: pointer;
+        }
+  
+        button:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+  

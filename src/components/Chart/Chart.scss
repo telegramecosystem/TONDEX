@@ -1,0 +1,49 @@
+/* Chart.scss */
+.chart-container {
+    background: #1f2128;
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+    .chart {
+      height: 400px;
+      // Add styles for your chart here
+    }
+  }
+  
+  .pair-name {
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    color: #FFF;
+    margin-bottom: 20px; // Spacing before the selector
+  }
+  
+  .timeframe-selector {
+    text-align: center; // Center the selector
+    margin-bottom: 20px; // Spacing after the selector
+  
+    select {
+      padding: 5px 15px;
+      border-radius: 5px;
+      background-color: #333;
+      border: none;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #444; // Slightly lighter on hover
+      }
+  
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  

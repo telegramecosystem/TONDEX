@@ -1,0 +1,42 @@
+.center {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px; /* Zwiększony odstęp między kafelkami */
+    padding: 30px; /* Większy padding dla lepszego wyglądu */
+  }
+  
+  .tile {
+    background: linear-gradient(145deg, #2c2f33, #242628);
+    color: #f0f0f0;
+    border-radius: 20px; /* Większe zaokrąglenie rogów dla lepszego efektu */
+    padding: 30px; /* Większy padding wewnątrz kafelka */
+    width: 260px; /* Zwiększona szerokość kafelka */
+    height: 150px; /* Zwiększona wysokość kafelka */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.6), /* Silniejszy cień dla lepszego kontrastu */
+               -8px -8px 25px rgba(255, 255, 255, 0.1); /* Większy cień wewnętrzny dla lepszego efektu głębi */
+    transition: all 0.3s ease;
+  
+    &:hover {
+      background: linear-gradient(145deg, #242628, #2c2f33);
+      box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.6), /* Bardziej wyraźny cień zewnętrzny przy najechaniu */
+                 -15px -15px 30px rgba(255, 255, 255, 0.1); /* Bardziej wyraźny cień wewnętrzny */
+      transform: translateY(-7px); /* Większe uniesienie kafelka przy najechaniu */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .center {
+      justify-content: center;
+    }
+  
+    .tile {
+      width: 95%; /* Kafelki zajmują niemal całą dostępną szerokość na mniejszych ekranach */
+      margin: 10px auto; /* Większe marginesy dla lepszego wyświetlania na mniejszych ekranach */
+    }
+  }
+  

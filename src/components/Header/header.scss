@@ -1,0 +1,65 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; // Utrzymuje przycisk po prawej stronie
+  padding: 10px 25px;
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+
+    .logo {
+      max-width: 100px;
+      height: auto;
+      margin-right: 15px;
+    }
+
+    > span {
+      font-size: 30px;
+      line-height: 34px;
+      color: rgba(102,170,238,0.91);
+      font-weight: bold;
+    }
+  }
+
+  // Stylowanie dla nawigacji z tagami <a>
+  nav a {
+    color: white; // Zakładając biały tekst dla linków
+    text-decoration: none; // Usunięcie podkreślenia
+    margin-right: 20px; // Przykładowa przestrzeń między linkami
+
+    &:hover {
+      text-decoration: underline; // Podkreślenie tekstu po najechaniu
+    }
+  }
+
+  // Dodanie kontenera dla nawigacji, jeśli potrzebujesz dodatkowych stylów
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 525px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+
+    // Stylowanie dla logo-container, jeśli znajduje się w header
+    .logo-container {
+      margin-bottom: 15px; // Dodaje przestrzeń między logiem a nawigacją
+    }
+
+    .navigation {
+      order: 2; // Aby nawigacja była wyświetlana poniżej loga
+      justify-content: center; // Wyśrodkowuje linki
+      margin-bottom: 15px; // Dodaje przestrzeń między nawigacją a przyciskiem
+    }
+
+    // Zmiana selektora dla przycisku, jeśli jest bezpośrednim dzieckiem header
+    > .ton-connect-button {
+      order: 3;
+      align-self: center; // Wyśrodkowanie przycisku
+    }
+  }
+}
